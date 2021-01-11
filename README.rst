@@ -1,3 +1,14 @@
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX="$HOME/pdfpc" ..
+make install
+$HOME/pdfpc/bin/pdfpc ...
+
+Igy orokre van 4.3.4-es verzionk, mert a 4.4-ben:
+  - elromlottak a speaker notesok tordelese
+  - kivettek a cachet, de nem adtak helyette semmit
+
+
 =====
 pdfpc
 =====
