@@ -1,8 +1,9 @@
 Upstream PDFPC is broken since version 4.4, so this is how you can use this
 repo to quickly compile yourself the last good version (v4.3.4) locally::
 
-    mkdir build
-    cd build
+    git clone https://github.com/nilcons-contrib/pdfpc
+    mkdir pdfpc/build
+    cd pdfpc/build
     cmake -DCMAKE_INSTALL_PREFIX="$HOME/pdfpc" ..
     make install
     $HOME/pdfpc/bin/pdfpc ...
