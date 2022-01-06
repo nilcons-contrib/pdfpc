@@ -1,13 +1,15 @@
+Upstream PDFPC is broken since version 4.4, so this is how you can use this
+repo to quickly compile yourself the last good version (v4.3.4) locally::
+
     mkdir build
     cd build
     cmake -DCMAKE_INSTALL_PREFIX="$HOME/pdfpc" ..
     make install
     $HOME/pdfpc/bin/pdfpc ...
 
-Igy orokre van 4.3.4-es verzionk, mert a 4.4-ben:
-  - elromlottak a speaker notesok tordelese
-  - kivettek a cachet, de nem adtak helyette semmit
-
+The features that got removed in 4.4 and are needed:
+  - there is no automatic wrapping of text for speaker notes in case of plain-text speaker notes (and not everybody can move to markdown speaker notes if working in a team)
+  - there is no support for disk render cache anymore, so startup lag is very bad in the first few seconds of delivering a presentation
 
 =====
 pdfpc
